@@ -1,0 +1,74 @@
+/* css box login */
+.wrapper__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images//banner1.jpg) no-repeat center / cover;
+  height: 700px;
+}
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 11px;
+  width: 500px;
+  height: 500px;
+}
+
+/* css title login */
+.login__title {
+  font-weight: 350;
+  font-size: 34px;
+  font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+/* css form input */
+.login input {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  font-weight: 500;
+  font-size: 16px;
+  outline: none;
+}
+.login label {
+  color: red;
+  display: block;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.login input:nth-of-type(2) {
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* css button sign in */
+.btnSingin {
+  width: 400px;
+  padding: 16px 0;
+  margin-top: 20px;
+  background-color: #494949;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* css link sign up */
+.linkSignUp {
+  margin-top: 50px;
+}
+.login span,
+.login a {
+  font-size: 18px;
+  font-style: italic;
+}
+.login span {
+  margin-right: 4px;
+  color: #b2b2b2;
+}
+.login a {
+  text-decoration: none;
+  color: #a4bbeb;
+}

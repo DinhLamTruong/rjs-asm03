@@ -1,0 +1,39 @@
+/* css footer */
+.footertContent {
+  background-color: #111111;
+  color: white;
+  margin-top: 40px;
+  height: 200px;
+}
+
+/* css footer heading */
+.footertContent h5 {
+  text-align: start;
+  font-style: italic;
+  margin-top: 40px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-weight: 450;
+  color: white;
+}
+
+/* css footer item */
+.footertContent ul {
+  list-style: none;
+  text-align: start;
+  text-transform: capitalize;
+  opacity: 0.6;
+  font-style: italic;
+  padding-left: 0;
+}
+.footertContent ul li {
+  margin: 2px 0;
+}
+.footertContent ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+.footertContent ul li a:hover {
+  color: #ddb456;
+}

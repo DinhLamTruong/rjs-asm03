@@ -1,0 +1,179 @@
+/* css header */
+.cartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  height: 160px;
+  background-color: #f8f9fa;
+}
+.cartHeader h2 {
+  font-size: 50px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+.cartHeader span {
+  color: #b3b6b9;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+/* css title */
+.cartTitle {
+  text-align: start;
+  margin: 40px 30px;
+}
+
+/* css box sản phẩm */
+.shoppingCart {
+  display: flex;
+  justify-content: space-between;
+}
+.cartProductDetail {
+  width: 65%;
+}
+
+.cartProductDetail ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.cartProductTitle {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 34px;
+  background-color: #f8f9fa;
+  padding: 18px 0 !important;
+  padding-left: 0;
+}
+.cartProductDetail ul li {
+  width: 120px;
+}
+.cartProductItem {
+  margin-bottom: 26px;
+  align-items: center;
+}
+.quantityCart svg {
+  cursor: pointer;
+}
+.trashCan svg {
+  cursor: pointer;
+}
+.cartProductItem li:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+}
+.cartProductItem li:nth-child(4) {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cartProductItem li:nth-child(4) span {
+  margin: 0 16px;
+}
+
+.price {
+  font-style: italic;
+  color: #b5b5b5;
+}
+.navigateCart {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 30px;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  align-items: center;
+}
+
+/* css button Continue shopping */
+.backShopping {
+  cursor: pointer;
+}
+.backShopping span:first-child {
+  margin-left: 0;
+  font-size: 12px;
+}
+.backShopping span:last-child {
+  opacity: 0.8;
+}
+.backShopping span {
+  margin-left: 10px;
+}
+
+/* css button proceed to checkout */
+.proceedCheckout {
+  border: 1px solid black;
+  padding: 6px 20px;
+  cursor: pointer;
+}
+.proceedCheckout span {
+  margin-right: 10px;
+}
+.proceedCheckout span:first-child {
+  opacity: 0.8;
+}
+.proceedCheckout span:last-child {
+  margin-right: 0;
+  font-size: 12px;
+}
+
+/* css box tổng giỏ hàng */
+.cartTotal {
+  background-color: #f8f9fa;
+  width: 30%;
+  height: max-content;
+  margin-right: 10px;
+}
+.wrapperCart {
+  padding: 30px 40px;
+}
+.cartTotalHeading {
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: start;
+  font-weight: 400;
+  font-size: 26px;
+}
+.subTotal,
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.subTotal span,
+.total span {
+  text-transform: uppercase;
+  font-weight: 450;
+  font-style: italic;
+}
+.subTotal {
+  border-bottom: 1px solid black;
+}
+.subTotal span:last-child {
+  opacity: 0.6;
+}
+.total span:last-child {
+  font-size: 18px;
+}
+.inputCoupon {
+  padding: 10px 4px;
+  outline: none;
+  width: 100%;
+  margin-top: 20px;
+  opacity: 0.6;
+}
+.btnApply {
+  background-color: #383838;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+}

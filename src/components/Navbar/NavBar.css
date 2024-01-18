@@ -1,0 +1,61 @@
+/* css box navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 1140px;
+  margin-bottom: 0;
+}
+.navbar ul li {
+  font-style: italic;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+.navbar ul li a.active {
+  color: #ddb456;
+}
+.navItem1,
+.navItem3 {
+  display: flex;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.navItem1 li,
+.navItem3 li {
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.navItem2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.navItem3 li:first-child {
+  margin-right: 14px;
+}
+.navItem3 li {
+  display: flex;
+  align-items: center;
+}
+.navItem3 span {
+  margin-right: 4px;
+}
+.navItem3 span:first-child {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.userName {
+  font-size: 18px;
+  margin: 0 4px;
+  font-weight: 500;
+}
+.icon {
+  font-size: 14px;
+}

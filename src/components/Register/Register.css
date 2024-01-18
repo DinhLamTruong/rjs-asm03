@@ -1,0 +1,76 @@
+/* css box sign up */
+.wrapper__register {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: url(../../images//banner1.jpg) no-repeat center / cover;
+  height: 700px;
+}
+.register {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 11px;
+  width: 500px;
+  height: 600px;
+}
+
+/* css title sign up */
+.register__title {
+  font-weight: 350;
+  font-size: 34px;
+  font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+/* css form input */
+.register input {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  font-weight: 500;
+  font-size: 16px;
+  outline: none;
+}
+.register label {
+  display: block;
+  color: red;
+  text-align: start;
+  margin-left: 20px;
+}
+
+.inputTel {
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+/* css button sign up */
+.btnSingup {
+  width: 400px;
+  padding: 16px 0;
+  margin-top: 20px;
+  background-color: #494949;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* css link login */
+.loginClick {
+  margin-top: 40px;
+}
+.register span,
+.register a {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-style: italic;
+}
+.register span {
+  margin-right: 4px;
+  color: #b2b2b2;
+}
+.register a {
+  text-decoration: none;
+  color: #a4bbeb;
+}

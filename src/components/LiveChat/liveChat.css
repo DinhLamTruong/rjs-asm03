@@ -1,0 +1,151 @@
+/* css box live chat */
+.liveChat {
+  position: fixed;
+  right: 4%;
+  bottom: 13%;
+  z-index: 10000;
+}
+.boxLiveChat {
+  background-color: black;
+  border: 6px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.iconMess {
+  position: relative;
+  fill: white;
+}
+
+/* css popup chat contents */
+.popupChat {
+  position: absolute;
+  width: 430px;
+  height: max-content;
+  top: -480px;
+  left: -420px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #dadada;
+  animation: rotateChat 0.5s ease-in-out;
+  transition: transform;
+}
+
+@keyframes rotateChat {
+  0% {
+    transform: rotate(-15deg) scale(0.2);
+  }
+  50% {
+    transform: rotate(0deg) scale(0.5);
+  }
+  75% {
+    transform: rotate(-10deg) scale(0.75);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+/* css heading live chat */
+.chatHeading {
+  display: flex;
+  border-bottom: 0.5px solid #ebebeb;
+  justify-content: space-between;
+  align-items: center;
+}
+.chatHeading h2,
+.chatHeading span {
+  margin: 12px 20px;
+  text-transform: capitalize;
+}
+.chatHeading h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.chatHeading span {
+  font-style: italic;
+  background-color: #e4e7ea;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.chatHeading span:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(167, 125, 125);
+}
+
+/* css live chat text */
+.chatContent {
+  height: 340px;
+  overflow-y: auto;
+}
+.chatCustomer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+  margin-right: 60px;
+}
+.chatCustomer p {
+  text-align: start;
+  margin-right: 12px;
+  margin-left: 14px;
+  margin-bottom: 0;
+  background-color: #48b0f7;
+  color: white;
+  padding: 6px 8px;
+  font-style: italic;
+  border-radius: 3px;
+  font-weight: 300;
+}
+.chatAdmin {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 14px;
+}
+.chatAdmin p {
+  text-align: start;
+  margin-right: 60px;
+  background-color: #f5f6f7;
+  padding: 6px 8px;
+  font-style: italic;
+  border-radius: 3px;
+  font-weight: 300;
+}
+.chatAdmin .iconAdmin {
+  width: 50px;
+  height: 50px;
+  cursor: default;
+}
+
+/* css live chat footer */
+.chatFooter {
+  padding: 10px;
+  display: flex;
+  border-top: 1px solid #ebebeb;
+  align-items: center;
+  background-color: #f9fafb;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.chatFooter img {
+  width: 50px;
+  height: 50px;
+}
+.chatFooter input {
+  margin-top: 4px;
+  margin-right: 14px;
+  font-size: 18px;
+  font-weight: 450;
+  outline: none;
+  border: none;
+}
+.iconFooter {
+  margin-right: 14px;
+  color: #cac7c7;
+  cursor: pointer;
+}
+.iconFooter:last-child {
+  color: #48b0f7;
+}

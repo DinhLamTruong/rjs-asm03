@@ -1,0 +1,42 @@
+/* css danh sách các sản phẩm */
+.productTrend {
+  font-style: italic;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 20px 4px;
+}
+.productTrend h4:first-child {
+  opacity: 0.6;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.productTrend h4:last-child {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* css box sản phẩm */
+.productItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.productItems img {
+  width: 270px;
+  height: 250px;
+  margin: 8px;
+  object-fit: cover;
+}
+.productItems img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.product__name {
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.productItems span {
+  font-style: italic;
+  opacity: 0.6;
+}

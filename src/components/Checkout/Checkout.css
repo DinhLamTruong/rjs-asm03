@@ -1,0 +1,97 @@
+/* css box checkout header */
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+  background-color: #f8f9fa;
+  padding: 0 40px;
+}
+
+/* css heading */
+.checkoutHeading {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+.checkoutNavigate {
+  text-transform: uppercase;
+  font-style: italic;
+}
+.checkoutNavigate span {
+  margin: 0 4px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.checkoutNavigate span:nth-of-type(3) {
+  color: #aaaaaa;
+}
+
+/* css title */
+.checkout__title {
+  text-align: start;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 450;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+/* css phần chi tiết thanh toán */
+.billingDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* css box your order */
+.productDetail {
+  background-color: #f8f9fa;
+  width: 390px;
+  height: max-content;
+  padding: 26px;
+  margin-top: 26px;
+}
+/* css heading your order */
+.orderHeaeding {
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 20px;
+  text-align: start;
+}
+
+/* css box sản phẩm order */
+.oderProducts {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ebedf0;
+  text-align: start;
+}
+.oderProducts span:last-child {
+  /* margin-left: 10px; */
+  font-size: 14px;
+  opacity: 0.8;
+}
+.totalPrice {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.totalPrice span:last-child {
+  font-size: 18px;
+}
+.infoOrder span {
+  margin: 14px 0;
+  font-style: italic;
+}
+
+.infoOrder span:first-child {
+  font-size: 16px;
+  font-weight: 500;
+  width: 50%;
+  text-align: start;
+}

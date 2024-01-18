@@ -1,0 +1,35 @@
+/* css heading category */
+.collectionHeading {
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-style: italic;
+}
+.collectionHeading h6:first-child {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.collectionHeading h6:last-child {
+  font-size: 20px;
+}
+
+/* css category */
+.categoryItem1 {
+  display: flex;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.categoryItem1 img {
+  object-fit: cover;
+}
+.categoryItem2 {
+  display: flex;
+  padding: 0;
+}
+.categoryItem2 img {
+  width: 360px;
+}
+.categoryItem1 img:hover,
+.categoryItem2 img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

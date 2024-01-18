@@ -1,0 +1,69 @@
+/* css box shop page */
+.categoriesTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f9f6;
+  padding: 50px 0;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.categoriesTop h4 {
+  text-align: start;
+  margin-left: 50px;
+}
+.categoriesTop h6 {
+  text-align: end;
+  margin-right: 50px;
+  opacity: 0.6;
+}
+.categories h4 {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: start;
+}
+
+/* css menu sidebar */
+.navbarLeft ul {
+  list-style: none;
+  font-style: italic;
+  text-align: start;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.navbarLeft ul li {
+  padding: 10px;
+  padding-left: 16px;
+  line-height: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+.navbarLeft ul li:first-child {
+  background-color: #dcebdc;
+  padding: 12px;
+  padding-left: 16px;
+  font-size: 16px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.navbarLeft ul li a {
+  padding: 2px 0;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.navbarLeft ul li a.active {
+  color: #ebc677;
+}
+.navActive {
+  background-color: #111111 !important;
+  color: white;
+}

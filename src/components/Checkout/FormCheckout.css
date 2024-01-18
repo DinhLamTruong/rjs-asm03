@@ -1,0 +1,38 @@
+/* css form checkout */
+.billingform {
+  width: 60%;
+}
+.billingInput {
+  display: flex;
+  flex-direction: column;
+}
+.billingInput label {
+  font-style: italic;
+  text-align: start;
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  margin: 20px 0 10px 0;
+}
+.billingInput input {
+  font-size: 14px;
+  opacity: 0.8;
+  text-transform: capitalize;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #d3d8de;
+}
+
+/* css button order */
+.btnOrder {
+  display: flex;
+  background-color: #383838;
+  color: white;
+  margin-top: 20px;
+  font-style: italic;
+  padding: 5px 30px;
+  font-weight: 200;
+  font-size: 16px;
+  border: none;
+}

@@ -1,0 +1,45 @@
+/* css div banner */
+.banner {
+  background: url(../../images/banner1.jpg) no-repeat center / cover;
+  height: 400px;
+  max-width: 1140px;
+  object-fit: contain;
+  position: relative;
+  margin: auto;
+}
+/* css nội dung banner */
+.banner__contents {
+  display: flex;
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+  width: 180px;
+}
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  align-items: flex-start;
+}
+.banner__content span {
+  text-transform: uppercase;
+}
+.banner__content span:nth-child(1) {
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.banner__content span:nth-child(2) {
+  font-size: 24px;
+  letter-spacing: 3px;
+  width: 260px;
+  text-align: start;
+}
+.banner__content button {
+  font-style: italic;
+  background-color: #141414;
+  color: white;
+  font-size: 18px;
+  padding: 6px 34px;
+  margin-top: 20px;
+}
