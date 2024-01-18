@@ -3,10 +3,13 @@ import { useRouteError } from 'react-router-dom';
 const ErrorPage = () => {
   const error = useRouteError();
 
+  let title = 'An error occurred!';
+  let message = 'Something went wrong!';
+
   if (error.status === 404) {
-    // console.log(error.data);
+    title = 'Not Found!';
+    message = 'Could not find resource or page!';
   }
-  //   const errorPage = useRouteError();
   return (
     <div
       style={{
@@ -14,8 +17,8 @@ const ErrorPage = () => {
         marginTop: '20px',
       }}
     >
-      {/* <h1>{error.data.message}</h1> */}
-      {/* <span></span> */}
+      <span>{title}</span>
+      <h1>{message}</h1>
     </div>
   );
 };
