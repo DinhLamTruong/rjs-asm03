@@ -29,7 +29,7 @@ const cartSlice = createSlice({
         existingItem.quantity += product.quantity;
         existingItem.price += product.price;
       }
-      localStorage.setItem('product', JSON.stringify(state.listCart));
+      localStorage.setItem('products', JSON.stringify(state.listCart));
     },
 
     // action xóa product

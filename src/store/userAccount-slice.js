@@ -8,6 +8,7 @@ const userAccountSlice = createSlice({
   reducers: {
     // action login
     onLogin(state, action) {
+      state.currUser = { ...action.payload };
       localStorage.setItem('currUser', JSON.stringify(action.payload));
     },
     // action logout
