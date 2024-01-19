@@ -15,9 +15,13 @@ import './NavBar.css';
 const NavBar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  // state user login
+  //  user login
   const userAccount = useSelector(state => state.userAccount.currUser);
 
+  let userName;
+  if (userAccount) {
+    userName = userAccount.name;
+  }
   // hàm logout
   const handleLogout = () => {
     dispatch(userAccountActions.onLogout());
@@ -30,7 +34,6 @@ const NavBar = () => {
     if (pathname === '/login' && userAccount) {
       navigate('/');
     }
-
     // thêm class 'active' vào tag a có href === pathname
     const menu = document.querySelectorAll('.navbar ul li a');
     menu.forEach(item => {
@@ -92,6 +95,30 @@ const NavBar = () => {
             </a>
           </li>
 
+          {/* user login show username và tag a logout */}
+          {userAccount && (
+            <li>
+              <span>
+                <FontAwesomeIcon style={{ color: '#aaaaaa' }} icon={faUser} />
+                <span className="userName">{userName}</span>
+                <FontAwesomeIcon
+                  style={{ marginRight: '6px' }}
+                  icon={faCaretDown}
+                />
+              </span>
+              <a
+                href="/#"
+                onClick={e => {
+                  e.preventDefault();
+                }}
+              >
+                <span style={{ opacity: '1' }} onClick={handleLogout}>
+                  ( Logout )
+                </span>
+              </a>
+            </li>
+          )}
+
           {/* user chưa login show tag a login */}
           {!userAccount && (
             <li>
@@ -107,30 +134,6 @@ const NavBar = () => {
                   <FontAwesomeIcon style={{ color: '#aaaaaa' }} icon={faUser} />
                 </span>
                 <span>Login</span>
-              </a>
-            </li>
-          )}
-
-          {/* user login show username và tag a logout */}
-          {userAccount && (
-            <li>
-              <span>
-                <FontAwesomeIcon style={{ color: '#aaaaaa' }} icon={faUser} />
-                <span className="userName">{userAccount.name}</span>
-                <FontAwesomeIcon
-                  style={{ marginRight: '6px' }}
-                  icon={faCaretDown}
-                />
-              </span>
-              <a
-                href="/#"
-                onClick={e => {
-                  e.preventDefault();
-                }}
-              >
-                <span style={{ opacity: '1' }} onClick={handleLogout}>
-                  ( Logout )
-                </span>
               </a>
             </li>
           )}

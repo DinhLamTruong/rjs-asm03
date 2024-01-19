@@ -9,8 +9,12 @@ const Register = () => {
   const [enteredPhone, setEnteredPhone] = useState('');
 
   const inputNameRef = useRef();
+  const inputEmailRef = useRef();
+  const inputPasswordRef = useRef();
+  const inpuTelRef = useRef();
   const navigate = useNavigate();
 
+  // handleChange form register
   const handleChangeName = e => {
     const fullName = document.getElementById('fullName');
     fullName.innerText = '';
@@ -57,36 +61,43 @@ const Register = () => {
     // check input fullname
     if (enteredName.trim() === '') {
       fullName.innerText = 'Vui lòng nhập full name!';
+      inputNameRef.current.focus();
       return (isSubmit = false);
     }
 
     // check input email
     if (enteredEmail.trim() === '') {
       email.innerText = 'Vui lòng nhập email!';
+      inputEmailRef.current.focus();
       return (isSubmit = false);
     } else if (isEmail === true) {
       email.innerText = 'Email đã tồn tại';
+      inputEmailRef.current.focus();
       return (isSubmit = false);
     }
 
     // check input password
     if (enteredPassword.trim() === '') {
       password.innerText = 'Vui lòng nhập password!';
+      inputPasswordRef.current.focus();
       return (isSubmit = false);
     } else if (enteredPassword.length < 8) {
       password.innerText = 'Password tối thiểu phải có 8 ký tự!';
+      inputPasswordRef.current.focus();
       return (isSubmit = false);
     }
 
     // check input tel
     if (enteredPhone.trim() === '') {
       phoneNumber.innerText = 'Vui lòng nhập phone number!';
+      inpuTelRef.current.focus();
       return (isSubmit = false);
     } else {
       isSubmit = true;
     }
   }
 
+  // hàm submit form register
   const hanleSubimt = e => {
     e.preventDefault();
 
@@ -94,7 +105,6 @@ const Register = () => {
     if (isSubmit) {
       userArr.push(dataUser);
       localStorage.setItem('userArr', JSON.stringify(userArr));
-      inputNameRef.current.focus();
       navigate('/login');
     }
   };
@@ -122,6 +132,7 @@ const Register = () => {
               placeholder="Email"
               value={enteredEmail}
               onChange={handleChangeEmail}
+              ref={inputEmailRef}
             />
             <label htmlFor="inputEmail" id="email"></label>
           </div>
@@ -132,6 +143,7 @@ const Register = () => {
               placeholder="Password"
               value={enteredPassword}
               onChange={handleChangePassword}
+              ref={inputPasswordRef}
             />
             <label htmlFor="inputPassword" id="password"></label>
           </div>
@@ -143,6 +155,7 @@ const Register = () => {
               placeholder="Phone"
               value={enteredPhone}
               onChange={handleChangePhone}
+              ref={inpuTelRef}
             />
             <label htmlFor="inputTel" id="tel"></label>
           </div>

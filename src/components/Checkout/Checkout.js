@@ -16,6 +16,7 @@ const Checkout = () => {
 
   // danh sách sản phẩm order của user đang login
   const yourOder = listCart.filter(item => item.email === currUser.email);
+  
   // hàm tính tổng giá sản phẩm order
   const total = yourOder.reduce(
     (prePrice, currPrice) => prePrice + currPrice.price,

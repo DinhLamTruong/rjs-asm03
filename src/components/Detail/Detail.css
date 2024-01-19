@@ -138,7 +138,7 @@
   font-style: italic;
   font-size: 15px;
   opacity: 0.8;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 /* css box những sản phẩm tương tụ */
@@ -164,6 +164,7 @@
 }
 .relaedProduct img:hover {
   opacity: 0.7;
+  cursor: pointer;
   scale: 1.01;
 }
 .productContent {

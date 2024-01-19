@@ -2,7 +2,9 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const cartSlice = createSlice({
   name: 'cart',
-  initialState: { listCart: JSON.parse(localStorage.getItem('product')) ?? [] },
+  initialState: {
+    listCart: JSON.parse(localStorage.getItem('products')) ?? [],
+  },
   reducers: {
     // acttion thêm product vào giỏ hàng
     addCart(state, action) {
@@ -49,7 +51,7 @@ const cartSlice = createSlice({
         }
       });
       // lưu lại product sau khi xóa
-      localStorage.setItem('product', JSON.stringify(state.listCart));
+      localStorage.setItem('products', JSON.stringify(state.listCart));
     },
   },
 });

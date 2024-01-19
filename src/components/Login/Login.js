@@ -8,12 +8,12 @@ import './Login.css';
 const Login = () => {
   // state email
   const [enteredEmail, setEnteredEmail] = useState('');
-  //  state password
+  // state password
   const [enteredPassword, setEnteredPassword] = useState('');
 
   const inputEmailRef = useRef();
   const navigate = useNavigate();
-  const dispspatch = useDispatch();
+  const dispatch = useDispatch();
 
   // array user
   const userArr = JSON.parse(localStorage.getItem('userArr')) ?? [];
@@ -91,12 +91,11 @@ const Login = () => {
         setEnteredPassword('');
         return (isValidate = false);
       }
+      dispatch(userAccountActions.onLogin(userAccount));
       alert('Login success!');
-      dispspatch(userAccountActions.onLogin(userAccount));
       navigate('/');
     }
   };
-
   return (
     <div className="container wrapper__login">
       <div className="login">

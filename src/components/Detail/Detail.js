@@ -52,7 +52,7 @@ const Detail = ({ dataProducts }) => {
     setQuantityProduct(prev => prev + 1);
   };
 
-  // hàm set input số lượng sản phẩm -> '' khi input không phải số dương
+  // hàm set input số lượng sản phẩm -> '' khi input không phải number
   const handleChangeQuantity = e => {
     if (isNaN(+e.target.value)) {
       setQuantityProduct('');

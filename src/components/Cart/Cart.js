@@ -25,9 +25,6 @@ const Cart = () => {
   // state user login
   const currUser = useSelector(state => state.userAccount.currUser) ?? {};
 
-  // kiểm tra obj currUser là obj rỗng không
-  const isEmpty = Object.keys(currUser).length === 0;
-
   // danh sách tất cả các sản phẩm
   const listProduct = useSelector(state => state.cart.listCart);
 
@@ -67,6 +64,7 @@ const Cart = () => {
   const handleDeleteProduct = item => {
     dispatch(cartActions.deleteCart(item));
   };
+
   return (
     <div className="container">
       <div className="cartHeader">
@@ -123,7 +121,7 @@ const Cart = () => {
               </ul>
             ))}
           {/* user chưa login, giỏ hàng trống => giỏ hàng chưa có sản phẩm */}
-          {(isEmpty || productUserActive.length === 0) && (
+          {productUserActive.length === 0 && (
             <p style={{ fontSize: '20px' }}>
               You have no items in your shopping cart!
             </p>

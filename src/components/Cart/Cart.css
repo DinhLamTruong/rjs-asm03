@@ -34,7 +34,6 @@
 .cartProductDetail {
   width: 65%;
 }
-
 .cartProductDetail ul {
   list-style: none;
   display: flex;
@@ -45,16 +44,23 @@
   text-transform: uppercase;
   font-style: italic;
   font-weight: 500;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
   background-color: #f8f9fa;
   padding: 18px 0 !important;
-  padding-left: 0;
 }
 .cartProductDetail ul li {
   width: 120px;
 }
+.cartProductDetail ul li:nth-child(2) {
+  width: 130px;
+}
+.cartProductDetail ul li.price {
+  font-style: italic;
+  color: #b5b5b5;
+  width: 110px;
+}
 .cartProductItem {
-  margin-bottom: 26px;
+  margin-bottom: 12px;
   align-items: center;
 }
 .quantityCart svg {
@@ -72,14 +78,8 @@
   font-size: 18px;
   font-weight: 500;
 }
-
 .cartProductItem li:nth-child(4) span {
   margin: 0 16px;
-}
-
-.price {
-  font-style: italic;
-  color: #b5b5b5;
 }
 .navigateCart {
   display: flex;
